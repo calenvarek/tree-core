@@ -37,20 +37,23 @@ Successfully extracted dependency graph algorithms from kodrdriv into a standalo
 - Migrated dependencyGraph.test.ts from kodrdriv
 - Created mock graph helpers (createMockGraph, MockGraphPatterns)
 - Added 5 test patterns: independent, linear, diamond, circular, complex
-- **15 tests passing** ✅
+- Added file I/O tests (scanForPackageJsonFiles, parsePackageJson, shouldExclude)
+- Created test fixtures (simple-workspace, excluded, invalid)
+- **25 tests passing** ✅
+- **94.11% code coverage** ✅ (exceeds 80% target)
 - All core functionality verified
 
-**Time**: 45 minutes
+**Time**: 1.5 hours
 
-**Total Actual Time**: ~2 hours (faster than estimated 2-3 days!)
+**Total Actual Time**: ~2.5 hours (still much faster than estimated 2-3 days!)
 
 ---
 
 ## Package Details
 
-**Name**: `@eldrforge/tree-core`
-**Version**: 0.1.0
-**Size**: ~800 LOC (377 source + 281 tests + types/exports)
+**Name**: `@eldrforge/tree-core`  
+**Version**: 0.1.0  
+**Size**: ~850 LOC (377 source + 380 tests + types/exports + fixtures)
 
 ### Exports
 
@@ -113,7 +116,7 @@ tree-core/
 ## Test Results
 
 ```
-✓ tests/dependencyGraph.test.ts (15 tests)
+✓ tests/dependencyGraph.test.ts (25 tests)
 
 Test breakdown:
   ✓ topologicalSort (4 tests)
@@ -141,9 +144,29 @@ Test breakdown:
   ✓ MockGraphPatterns (3 tests)
     - Create linear, diamond, independent, circular, complex patterns
 
+  ✓ scanForPackageJsonFiles (3 tests)
+    - Find all package.json files
+    - Exclude patterns correctly
+    - Handle empty directories
+  
+  ✓ parsePackageJson (3 tests)
+    - Parse valid package.json
+    - Handle invalid JSON
+    - Handle missing files
+  
+  ✓ shouldExclude (3 tests)
+    - Return false for empty patterns
+    - Return false for non-matching paths
+    - Work with common exclusion patterns
+  
+  ✓ buildDependencyGraph integration (1 test)
+    - Build complete graph from real files
+
 Test Files  1 passed (1)
-Tests  15 passed (15)
-Duration  4ms
+Tests  25 passed (25)
+Duration  20ms
+
+Coverage: 94.11% ✅ (exceeds 80% target)
 ```
 
 ---
