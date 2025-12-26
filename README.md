@@ -2,6 +2,16 @@
 
 Dependency graph algorithms for monorepo package analysis.
 
+## Test Coverage
+
+**94.11% coverage** ✅ (exceeds 80% target)
+
+```
+File               | % Stmts | % Branch | % Funcs | % Lines
+-------------------|---------|----------|---------|--------
+dependencyGraph.ts |   94.11 |    90.76 |      80 |   94.11
+```
+
 ## Features
 
 - 📦 **Package Discovery** - Scan workspace for package.json files
