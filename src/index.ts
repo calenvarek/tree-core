@@ -5,33 +5,33 @@
  */
 
 // Types
-export type { PackageInfo, DependencyGraph, SerializedGraph } from './types.js';
+export type { PackageInfo, DependencyGraph, SerializedGraph } from './types';
 
 // Package discovery
 export {
     scanForPackageJsonFiles,
     parsePackageJson,
     shouldExclude
-} from './dependencyGraph.js';
+} from './dependencyGraph';
 
 // Graph building
 export {
     buildDependencyGraph,
     buildReverseGraph
-} from './dependencyGraph.js';
+} from './dependencyGraph';
 
 // Graph analysis
 export {
     topologicalSort,
     findAllDependents,
     validateGraph
-} from './dependencyGraph.js';
+} from './dependencyGraph';
 
 // Serialization
 export {
     serializeGraph,
     deserializeGraph
-} from './dependencyGraph.js';
+} from './dependencyGraph';
 
 // Logger configuration
-export { setLogger } from './dependencyGraph.js';
+export { setLogger } from './dependencyGraph';
