@@ -51,8 +51,8 @@ Successfully extracted dependency graph algorithms from kodrdriv into a standalo
 
 ## Package Details
 
-**Name**: `@eldrforge/tree-core`  
-**Version**: 0.1.0  
+**Name**: `@eldrforge/tree-core`
+**Version**: 0.1.0
 **Size**: ~850 LOC (377 source + 380 tests + types/exports + fixtures)
 
 ### Exports
@@ -148,17 +148,17 @@ Test breakdown:
     - Find all package.json files
     - Exclude patterns correctly
     - Handle empty directories
-  
+
   ✓ parsePackageJson (3 tests)
     - Parse valid package.json
     - Handle invalid JSON
     - Handle missing files
-  
+
   ✓ shouldExclude (3 tests)
     - Return false for empty patterns
     - Return false for non-matching paths
     - Work with common exclusion patterns
-  
+
   ✓ buildDependencyGraph integration (1 test)
     - Build complete graph from real files
 

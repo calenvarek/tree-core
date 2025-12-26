@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs/promises';
 import { safeJsonParse, validatePackageJson } from '@eldrforge/git-tools';
 import { createStorage } from '@eldrforge/shared';
-import type { PackageInfo, DependencyGraph, SerializedGraph } from './types.js';
+import type { PackageInfo, DependencyGraph, SerializedGraph } from './types';
 
 // Simple logger interface for tree-core
 interface Logger {
@@ -15,8 +15,8 @@ interface Logger {
 
 let logger: Logger = {
     info: () => {},
-    error: (...args) => console.error(...args),
-    warn: (...args) => console.warn(...args),
+    error: () => {},
+    warn: () => {},
     verbose: () => {},
     debug: () => {}
 };

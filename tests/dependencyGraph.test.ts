@@ -347,12 +347,12 @@ describe('dependencyGraph', () => {
             // Test with simple patterns - the function checks if pattern matches
             // the path, relative path, or directory names
             const patterns = ['**/node_modules/**'];
-            
+
             // This function is complex and checks multiple variations
             // Just verify it doesn't crash and returns boolean
             const result1 = shouldExclude('/some/path/package.json', patterns);
             const result2 = shouldExclude('/another/path/package.json', []);
-            
+
             expect(typeof result1).toBe('boolean');
             expect(typeof result2).toBe('boolean');
             expect(result2).toBe(false); // Empty patterns always return false
