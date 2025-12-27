@@ -12,26 +12,26 @@ export {
     scanForPackageJsonFiles,
     parsePackageJson,
     shouldExclude
-} from './dependencyGraph';
+} from './dependencyGraph.js';
 
 // Graph building
 export {
     buildDependencyGraph,
     buildReverseGraph
-} from './dependencyGraph';
+} from './dependencyGraph.js';
 
 // Graph analysis
 export {
     topologicalSort,
     findAllDependents,
     validateGraph
-} from './dependencyGraph';
+} from './dependencyGraph.js';
 
 // Serialization
 export {
     serializeGraph,
     deserializeGraph
-} from './dependencyGraph';
+} from './dependencyGraph.js';
 
 // Logger configuration
-export { setLogger } from './dependencyGraph';
+export { setLogger } from './dependencyGraph.js';
