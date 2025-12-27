@@ -55,13 +55,9 @@ export default defineConfig([
                 SwitchCase: 1,
             }],
 
-            "import/extensions": ["error", "never", {
-                ignorePackages: true,
-                pattern: {
-                    "js": "never",
-                    "ts": "never",
-                    "d": "always"
-                }
+            "import/extensions": ["error", "ignorePackages", {
+                "js": "always",
+                "ts": "never"
             }],
 
             "import/no-extraneous-dependencies": ["error", {
