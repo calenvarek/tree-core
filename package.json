@@ -34,7 +34,7 @@
   "homepage": "https://github.com/calenvarek/tree-core#readme",
   "dependencies": {
     "@eldrforge/git-tools": "^0.1.15",
-    "@eldrforge/shared": "^0.1.4"
+    "@eldrforge/shared": "^0.1.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
