@@ -22,16 +22,16 @@
     "topological-sort",
     "dependency-resolution"
   ],
-  "author": "Calen Varek <calenvarek@gmail.com>",
+  "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calenvarek/tree-core.git"
+    "url": "git+https://github.com/grunnverk/tree-core.git"
   },
   "bugs": {
-    "url": "https://github.com/calenvarek/tree-core/issues"
+    "url": "https://github.com/grunnverk/tree-core/issues"
   },
-  "homepage": "https://github.com/calenvarek/tree-core#readme",
+  "homepage": "https://github.com/grunnverk/tree-core#readme",
   "dependencies": {
     "@eldrforge/git-tools": "^0.1.15",
     "@eldrforge/shared": "^0.1.5"
