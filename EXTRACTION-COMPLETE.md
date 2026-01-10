@@ -192,7 +192,7 @@ Coverage: 94.11% ✅ (exceeds 80% target)
    ```bash
    # Repository may need to be created manually on GitHub
    # Then push:
-   cd ~/gitw/calenvarek/tree-core
+   cd ~/gitw/grunnverk/tree-core
    git push -u origin main
    ```
 

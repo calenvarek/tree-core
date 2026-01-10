@@ -1151,17 +1151,17 @@ Contributions are welcome! Please ensure:
 
 ## License
 
-MIT © Calen Varek
+MIT © Tim O'Brien
 
 ## Links
 
-- [GitHub Repository](https://github.com/calenvarek/tree-core)
-- [Issue Tracker](https://github.com/calenvarek/tree-core/issues)
+- [GitHub Repository](https://github.com/grunnverk/tree-core)
+- [Issue Tracker](https://github.com/grunnverk/tree-core/issues)
 - [npm Package](https://www.npmjs.com/package/@eldrforge/tree-core)
 
 ## Support
 
-For questions, issues, or feature requests, please [open an issue](https://github.com/calenvarek/tree-core/issues) on GitHub.
+For questions, issues, or feature requests, please [open an issue](https://github.com/grunnverk/tree-core/issues) on GitHub.
 
 ---
 
