@@ -10,3 +10,4 @@ coverage/
 *.tgz
 output/
 .kodrdriv-test-cache.json
+package-lock.json
