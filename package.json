@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/grunnverk/tree-core#readme",
   "dependencies": {
-    "@eldrforge/git-tools": "^0.1.22",
+    "@eldrforge/git-tools": "^1.0.0",
     "@eldrforge/shared": "^0.1.10"
   },
   "devDependencies": {
