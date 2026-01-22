@@ -1,4 +1,4 @@
-# @eldrforge/tree-core - Agentic Guide
+# @grunnverk/tree-core - Agentic Guide
 
 ## Purpose
 
@@ -15,7 +15,7 @@ Dependency graph algorithms for monorepo package analysis. Provides topological 
 ## Usage
 
 ```typescript
-import { DependencyGraph, buildDependencyGraph } from '@eldrforge/tree-core';
+import { DependencyGraph, buildDependencyGraph } from '@grunnverk/tree-core';
 
 // Build dependency graph
 const graph = await buildDependencyGraph('/path/to/monorepo');
@@ -32,8 +32,8 @@ const hasCycles = graph.hasCycles();
 
 ## Dependencies
 
-- @eldrforge/git-tools - Git operations
-- @eldrforge/shared - Shared utilities
+- @grunnverk/git-tools - Git operations
+- @grunnverk/shared - Shared utilities
 
 ## Package Structure
 

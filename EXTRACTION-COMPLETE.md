@@ -1,7 +1,7 @@
 # Tree-Core Extraction Complete! ✅
 
 **Date**: December 26, 2025
-**Package**: @eldrforge/tree-core v0.1.0
+**Package**: @grunnverk/tree-core v0.1.0
 **Status**: Code complete, ready for publishing
 
 ---
@@ -17,7 +17,7 @@ Successfully extracted dependency graph algorithms from kodrdriv into a standalo
 ### Phase 1: Package Setup ✅
 - Created tree-core directory with git
 - Configured TypeScript, Vitest, ESLint
-- Added package.json with dependencies (@eldrforge/git-tools, @eldrforge/shared)
+- Added package.json with dependencies (@grunnverk/git-tools, @grunnverk/shared)
 - Created README, LICENSE, .gitignore
 - Initial commit
 
@@ -51,7 +51,7 @@ Successfully extracted dependency graph algorithms from kodrdriv into a standalo
 
 ## Package Details
 
-**Name**: `@eldrforge/tree-core`
+**Name**: `@grunnverk/tree-core`
 **Version**: 0.1.0
 **Size**: ~850 LOC (377 source + 380 tests + types/exports + fixtures)
 
@@ -174,8 +174,8 @@ Coverage: 94.11% ✅ (exceeds 80% target)
 ## Dependencies
 
 **Runtime**:
-- `@eldrforge/git-tools` ^0.1.6 - Git operations, JSON validation
-- `@eldrforge/shared` ^0.1.0 - Storage utilities
+- `@grunnverk/git-tools` ^0.1.6 - Git operations, JSON validation
+- `@grunnverk/shared` ^0.1.0 - Storage utilities
 
 **Dev**:
 - TypeScript 5.7.2
@@ -221,7 +221,7 @@ import {
   buildDependencyGraph,
   topologicalSort,
   setLogger
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 // Optional: Configure custom logger
 setLogger({
@@ -282,7 +282,7 @@ import { buildDependencyGraph } from '../../src/util/dependencyGraph';
 
 **After** (standalone package):
 ```typescript
-import { buildDependencyGraph } from '@eldrforge/tree-core';
+import { buildDependencyGraph } from '@grunnverk/tree-core';
 ```
 
 **Benefits**:

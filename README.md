@@ -1,4 +1,4 @@
-# @eldrforge/tree-core
+# @grunnverk/tree-core
 
 A powerful TypeScript library for analyzing and managing dependencies in monorepo workspaces. Build dependency graphs, perform topological sorting, detect circular dependencies, and determine optimal build orders for complex package ecosystems.
 
@@ -23,7 +23,7 @@ A powerful TypeScript library for analyzing and managing dependencies in monorep
 ## Installation
 
 ```bash
-npm install @eldrforge/tree-core
+npm install @grunnverk/tree-core
 ```
 
 **Requirements:**
@@ -38,7 +38,7 @@ import {
   buildDependencyGraph,
   topologicalSort,
   validateGraph
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 // 1. Scan your monorepo for packages
 const packagePaths = await scanForPackageJsonFiles('/path/to/monorepo', [
@@ -107,7 +107,7 @@ import {
   scanForPackageJsonFiles,
   buildDependencyGraph,
   topologicalSort
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 async function analyzeMonorepo(workspaceRoot: string) {
   // Find all packages, excluding common directories
@@ -153,7 +153,7 @@ import {
   buildDependencyGraph,
   findAllDependents,
   scanForPackageJsonFiles
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 async function findAffectedPackages(
   workspaceRoot: string,
@@ -192,7 +192,7 @@ import {
   topologicalSort,
   validateGraph,
   scanForPackageJsonFiles
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 async function checkForCircularDependencies(workspaceRoot: string) {
   const packagePaths = await scanForPackageJsonFiles(workspaceRoot);
@@ -232,7 +232,7 @@ import {
   topologicalSort,
   scanForPackageJsonFiles,
   type DependencyGraph
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 function planParallelBuilds(graph: DependencyGraph): string[][] {
   const buildOrder = topologicalSort(graph);
@@ -300,7 +300,7 @@ import {
   deserializeGraph,
   scanForPackageJsonFiles,
   type SerializedGraph
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 import fs from 'fs/promises';
 
 async function getCachedGraph(
@@ -340,7 +340,7 @@ const graph = await getCachedGraph(
 Integrate with your logging system:
 
 ```typescript
-import { setLogger, buildDependencyGraph } from '@eldrforge/tree-core';
+import { setLogger, buildDependencyGraph } from '@grunnverk/tree-core';
 import winston from 'winston'; // or any other logger
 
 // Create your logger
@@ -372,7 +372,7 @@ import {
   scanForPackageJsonFiles,
   buildDependencyGraph,
   type DependencyGraph
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 async function analyzePackageSubset(
   workspaceRoot: string,
@@ -410,7 +410,7 @@ import {
   scanForPackageJsonFiles,
   buildDependencyGraph,
   type DependencyGraph
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 interface DependencyReport {
   totalPackages: number;
@@ -829,7 +829,7 @@ interface SerializedGraph {
 Only rebuild affected packages:
 
 ```typescript
-import { findAllDependents, topologicalSort } from '@eldrforge/tree-core';
+import { findAllDependents, topologicalSort } from '@grunnverk/tree-core';
 
 async function incrementalBuild(
   graph: DependencyGraph,
@@ -918,7 +918,7 @@ import {
   scanForPackageJsonFiles,
   buildDependencyGraph,
   topologicalSort
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 
 async function safeBuildOrder(workspaceRoot: string): Promise<string[] | null> {
   try {
@@ -964,8 +964,8 @@ dependencyGraph.ts |   94.11 |    90.76 |      80 |   94.11
 
 This library depends on:
 
-- `@eldrforge/git-tools` - Git validation and JSON parsing utilities
-- `@eldrforge/shared` - Storage and filesystem abstractions
+- `@grunnverk/git-tools` - Git validation and JSON parsing utilities
+- `@grunnverk/shared` - Storage and filesystem abstractions
 
 ## Development
 
@@ -1019,7 +1019,7 @@ import {
   validateGraph,
   findAllDependents,
   setLogger
-} from '@eldrforge/tree-core';
+} from '@grunnverk/tree-core';
 import { execSync } from 'child_process';
 import path from 'path';
 
@@ -1157,7 +1157,7 @@ MIT © Tim O'Brien
 
 - [GitHub Repository](https://github.com/grunnverk/tree-core)
 - [Issue Tracker](https://github.com/grunnverk/tree-core/issues)
-- [npm Package](https://www.npmjs.com/package/@eldrforge/tree-core)
+- [npm Package](https://www.npmjs.com/package/@grunnverk/tree-core)
 
 ## Support
 
