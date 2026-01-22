@@ -1,5 +1,5 @@
 /**
- * @eldrforge/tree-core
+ * @grunnverk/tree-core
  *
  * Dependency graph algorithms for monorepo package analysis.
  */

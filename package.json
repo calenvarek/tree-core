@@ -1,5 +1,5 @@
 {
-  "name": "@eldrforge/tree-core",
+  "name": "@grunnverk/tree-core",
   "version": "1.0.0-dev.0",
   "description": "Dependency graph algorithms for monorepo package analysis",
   "main": "dist/index.js",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/grunnverk/tree-core#readme",
   "dependencies": {
-    "@eldrforge/git-tools": "^1.0.1",
-    "@eldrforge/shared": "^0.1.11"
+    "@grunnverk/git-tools": "^1.0.1",
+    "@grunnverk/shared": "^0.1.11"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",

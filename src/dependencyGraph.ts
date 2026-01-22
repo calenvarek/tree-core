@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs/promises';
-import { safeJsonParse, validatePackageJson } from '@eldrforge/git-tools';
-import { createStorage } from '@eldrforge/shared';
+import { safeJsonParse, validatePackageJson } from '@grunnverk/git-tools';
+import { createStorage } from '@grunnverk/shared';
 import type { PackageInfo, DependencyGraph, SerializedGraph } from './types';
 
 // Simple logger interface for tree-core
