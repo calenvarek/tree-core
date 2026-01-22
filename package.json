@@ -1,6 +1,6 @@
 {
   "name": "@grunnverk/tree-core",
-  "version": "1.0.1-dev.0",
+  "version": "1.5.0-dev.0",
   "description": "Dependency graph algorithms for monorepo package analysis",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/grunnverk/tree-core#readme",
   "dependencies": {
-    "@grunnverk/git-tools": "^1.0.1",
-    "@grunnverk/shared": "^0.1.11"
+    "@grunnverk/git-tools": "^1.5.0",
+    "@grunnverk/shared": "^1.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
