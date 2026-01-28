@@ -34,12 +34,20 @@ function getLogger(): Logger {
  */
 const matchesPattern = (filePath: string, pattern: string): boolean => {
     // Convert simple glob patterns to regex
+    // Use unique string placeholders to avoid escaping regex metacharacters we intentionally create
+    const DOUBLE_STAR = '__DOUBLE_STAR__';
+    const SINGLE_STAR = '__SINGLE_STAR__';
+    const QUESTION = '__QUESTION__';
+
     const regexPattern = pattern
-        .replace(/\\/g, '\\\\')  // Escape backslashes
-        .replace(/\*\*/g, '.*')  // ** matches any path segments
-        .replace(/\*/g, '[^/]*') // * matches any characters except path separator
-        .replace(/\?/g, '.')     // ? matches any single character
-        .replace(/\./g, '\\.');  // Escape literal dots
+        .replace(/\\/g, '\\\\')           // Escape backslashes
+        .replace(/\*\*/g, DOUBLE_STAR)    // Placeholder for ** (any path segments)
+        .replace(/\*/g, SINGLE_STAR)      // Placeholder for * (any chars except /)
+        .replace(/\?/g, QUESTION)         // Placeholder for ? (single char)
+        .replace(/\./g, '\\.')            // Escape literal dots
+        .replace(new RegExp(DOUBLE_STAR, 'g'), '.*')       // Replace ** placeholder with .*
+        .replace(new RegExp(SINGLE_STAR, 'g'), '[^/]*')    // Replace * placeholder with [^/]*
+        .replace(new RegExp(QUESTION, 'g'), '.');          // Replace ? placeholder with .
 
     const regex = new RegExp(`^${regexPattern}$`);
     return regex.test(filePath) || regex.test(path.basename(filePath));
